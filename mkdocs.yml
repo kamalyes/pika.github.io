@@ -1,0 +1,68 @@
+site_name: Pika接口测试平台
+site_author: kamalyes
+edit_uri: ""
+theme:
+  name: "material"
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  custom_dir: overrides
+  palette:
+    primary: blue
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  features:
+    - navigation.top
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kamalyes/pikaWeb
+      name: pikaWeb(前端项目)
+
+  disqus: 'pika'
+repo_url: https://github.com/kamalyes/pika
+
+plugins:
+  - search:
+      lang: ja
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+  - 'https://readmore.openwrite.cn/js/readmore.js'
+  - javascripts/extra.js
+
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
+
+nav:
+  - 项目介绍: index.md
+
+  - 在线体验: deploy/在线预览.md
+
+  - 快速开始:
+      - 本地开发: requirements/准备条件.md
+      - 线上部署: deploy/部署.md
+
+  - 帮助文档: help/帮助文档.md
+
